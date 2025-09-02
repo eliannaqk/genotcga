@@ -1,0 +1,1935 @@
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  AlphaFold:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      AlphaFold can predict protein structures with atomic accuracy even where no similar structure is known
+
+     Versions:
+        AlphaFold/2.2.3-fosscuda-2020b-uniclust30_2020_06
+        AlphaFold/2.2.3-fosscuda-2020b
+        AlphaFold/2.2.4-fosscuda-2020b-uniclust30_2020_06
+        AlphaFold/2.2.4-fosscuda-2020b
+        AlphaFold/2.3.2-foss-2020b-CUDA-11.3.1
+        AlphaFold/2.3.2-foss-2022b-CUDA-12.1.1
+        AlphaFold/3.0.0-20241220
+        AlphaFold/3.0.1
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "AlphaFold" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider AlphaFold/3.0.1
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  AreTomo2:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      AreTomo2, a multi-GPU accelerated software package that fully automates motion- corrected marker-free tomographic alignment and reconstruction, now includes robust GPU-accelerated CTF
+      (Contrast Transfer Function) estimation in a single package. AreTomo2 is part of our endeavor to build a fully-automated high- throughput processing pipeline that enables real-time
+      reconstruction of tomograms in parallel with tomographic data collection. It strives to be fast and accurate, as well as provides for easy integration into subtomogram processing
+      workflows by generating IMod compatible files containing alignment and CTF parameters needed to bootstrap subtomogram averaging. AreTomo2 can also be used for on-the-fly reconstruction
+      of tomograms and CTF estimation in parallel with tilt series collection, enabling real-time assessment of sample quality and adjustment of collection parameters
+
+     Versions:
+        AreTomo2/1.0.0-GCCcore-12.2.0-CUDA-12.0.0
+        AreTomo2/1.1.2-GCCcore-12.2.0-CUDA-12.1.1
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "AreTomo2" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider AreTomo2/1.1.2-GCCcore-12.2.0-CUDA-12.1.1
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  AreTomo3:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      AreTomo3 is a multi-GPU accelerated software package that enables real-time fully automated reconstruction of cryoET tomograms in parallel with cryoET data collection. Integrating
+      MotionCor3, AreTomo2, and GCtfFind in a single application, AreTomo3 has established an autonomous preprocessing pipeline that, whenever a new tilt series is collected, can activate
+      and repeat itself from correction of beam induced motion and assembling tilt series to CTF estimation and correction, tomographic alignment, and 3D reconstruction throughout entire
+      session of data collection without human intervention. The end results include not only tomograms but also a rich set of alignment parameters to bootstrap subtomogram averaging. Our
+      test shows that AreTomo3 can catch up to 9-target PACE Tomo data collection with 4 NVidia RTX A6000 GPUs when it was configured to perform 2D local motion correction on movies and 3D
+      local motion correction on tilt series. The offline testing shows that AreTomo3 runs faster than the data collection. As a result, GPU resources can be shared with other tasks to
+      expand the preprocessing capacity. Tomogram denoising and particle picking now can run concurrently with AreTomo3 to maximize the preprocessing workflow.
+
+     Versions:
+        AreTomo3/2.0.6beta-GCCcore-12.2.0-CUDA-12.0.0
+        AreTomo3/2.1.3-GCCcore-12.2.0-CUDA-12.1.1
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "AreTomo3" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider AreTomo3/2.1.3-GCCcore-12.2.0-CUDA-12.1.1
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Arrow: Arrow/0.17.1-fosscuda-2020b
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      Apache Arrow (incl. PyArrow Python bindings), a cross-language development platform for in-memory data.
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load Arrow/0.17.1-fosscuda-2020b
+
+    Help:
+      Description
+      ===========
+      Apache Arrow (incl. PyArrow Python bindings), a cross-language development platform
+       for in-memory data.
+      
+      
+      More information
+      ================
+       - Homepage: https://arrow.apache.org
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Beast:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      BEAST is a cross-platform program for Bayesian MCMC analysis of molecular sequences. It is entirely orientated towards rooted, time-measured phylogenies inferred using strict or
+      relaxed molecular clock models. It can be used as a method of reconstructing phylogenies but is also a framework for testing evolutionary hypotheses without conditioning on a single
+      tree topology. BEAST uses MCMC to average over tree space, so that each tree is weighted proportional to its posterior probability. 
+
+     Versions:
+        Beast/2.6.3-fosscuda-2020b
+        Beast/2.6.3-GCCcore-10.2.0
+        Beast/2.6.7-GCC-10.2.0
+        Beast/2.7.4-GCC-12.2.0
+        Beast/2.7.6-GCC-12.2.0-CUDA-12.0.0
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "Beast" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider Beast/2.7.6-GCC-12.2.0-CUDA-12.0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  BeastX: BeastX/10.5.0-GCC-12.2.0-CUDA-12.0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      BEAST is a cross-platform program for Bayesian analysis of molecular sequences using MCMC. It is entirely orientated towards rooted, time-measured phylogenies inferred using strict or
+      relaxed molecular clock models. It can be used as a method of reconstructing phylogenies but is also a framework for testing evolutionary hypotheses without conditioning on a single
+      tree topology. BEAST uses MCMC to average over tree space, so that each tree is weighted proportional to its posterior probability. We include a simple to use user-interface program
+      for setting up standard analyses and a suit of programs for analysing the results.
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load BeastX/10.5.0-GCC-12.2.0-CUDA-12.0.0
+
+    Help:
+      Description
+      ===========
+      BEAST is a cross-platform program for Bayesian analysis of molecular sequences using MCMC. It is entirely orientated towards rooted, time-measured phylogenies inferred using strict or relaxed molecular clock models. It can be used as a method of reconstructing phylogenies but is also a framework for testing evolutionary hypotheses without conditioning on a single tree topology. BEAST uses MCMC to average over tree space, so that each tree is weighted proportional to its posterior probability. We include a simple to use user-interface program for setting up standard analyses and a suit of programs for analysing the results.
+      
+      
+      More information
+      ================
+       - Homepage: https://beast.community
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Biopython: Biopython/1.78-fosscuda-2020b
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      Biopython is a set of freely available tools for biological computation written in Python by an international team of developers. It is a distributed collaborative effort to develop
+      Python libraries and applications which address the needs of current and future work in bioinformatics. 
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load Biopython/1.78-fosscuda-2020b
+
+    Help:
+      Description
+      ===========
+      Biopython is a set of freely available tools for biological
+       computation written in Python by an international team of developers. It is
+       a distributed collaborative effort to develop Python libraries and
+       applications which address the needs of current and future work in
+       bioinformatics.
+      
+      
+      More information
+      ================
+       - Homepage: https://www.biopython.org
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Blender:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      Blender is the free and open source 3D creation suite. It supports the entirety of the 3D pipeline-modeling, rigging, animation, simulation, rendering, compositing and motion tracking,
+      even video editing and game creation.
+
+     Versions:
+        Blender/4.0.1-linux-x86_64-CUDA-12.1.1
+        Blender/4.2.1-linux-x86_64-CUDA-12.1.1
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "Blender" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider Blender/4.2.1-linux-x86_64-CUDA-12.1.1
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Boost: Boost/1.81.0-NVHPC-23.1-CUDA-12.0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      Boost provides free peer-reviewed portable C++ source libraries.
+
+
+    This module can be loaded directly: module load Boost/1.81.0-NVHPC-23.1-CUDA-12.0.0
+
+    Help:
+      Description
+      ===========
+      Boost provides free peer-reviewed portable C++ source libraries.
+      
+      
+      More information
+      ================
+       - Homepage: https://www.boost.org/
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  CTFFIND:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      Program for finding CTFs of electron micrographs.
+
+     Versions:
+        CTFFIND/4.1.14-foss-2020b
+        CTFFIND/4.1.14-foss-2022b-CUDA-12.0.0
+        CTFFIND/4.1.14-foss-2022b-CUDA-12.1.1
+        CTFFIND/4.1.14-fosscuda-2020b
+        CTFFIND/4.1.14-intel-2020b
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "CTFFIND" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider CTFFIND/4.1.14-intel-2020b
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  CUDA:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      CUDA (formerly Compute Unified Device Architecture) is a parallel computing platform and programming model created by NVIDIA and implemented by the graphics processing units (GPUs)
+      that they produce. CUDA gives developers access to the virtual instruction set and memory of the parallel computational elements in CUDA GPUs.
+
+     Versions:
+        CUDA/10.1.243
+        CUDA/11.1.1-GCC-10.2.0
+        CUDA/11.3.1
+        CUDA/11.8.0
+        CUDA/12.0.0
+        CUDA/12.1.1
+        CUDA/12.4.0
+        CUDA/12.6.0
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "CUDA" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider CUDA/12.6.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  CUDAcore:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      CUDA (formerly Compute Unified Device Architecture) is a parallel computing platform and programming model created by NVIDIA and implemented by the graphics processing units (GPUs)
+      that they produce. CUDA gives developers access to the virtual instruction set and memory of the parallel computational elements in CUDA GPUs.
+
+     Versions:
+        CUDAcore/11.1.1
+        CUDAcore/11.3.1
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "CUDAcore" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider CUDAcore/11.3.1
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ChimeraX: ChimeraX/1.8-1-gfbf-2022b-CUDA-12.1.1
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      UCSF ChimeraX (or simply ChimeraX) is the next-generation molecular visualization program from the Resource for Biocomputing, Visualization, and Informatics (RBVI), following UCSF
+      Chimera. ChimeraX is developed with support from National Institutes of Health R01-GM129325 and the Office of Cyber Infrastructure and Computational Biology, National Institute of
+      Allergy and Infectious Diseases. 
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load ChimeraX/1.8-1-gfbf-2022b-CUDA-12.1.1
+
+    Help:
+      Description
+      ===========
+      UCSF ChimeraX (or simply ChimeraX) is the next-generation molecular
+      visualization program from the Resource for Biocomputing, Visualization,
+      and Informatics (RBVI), following UCSF Chimera.
+      
+      ChimeraX is developed with support from National Institutes of Health
+      R01-GM129325 and the Office of Cyber Infrastructure and Computational
+      Biology, National Institute of Allergy and Infectious Diseases.
+      
+      
+      More information
+      ================
+       - Homepage: https://www.rbvi.ucsf.edu/chimerax/
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Clang: Clang/16.0.4-GCCcore-12.2.0-CUDA-12.0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      C, C++, Objective-C compiler, based on LLVM. Does not include C++ standard library -- use libstdc++ from GCC.
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load Clang/16.0.4-GCCcore-12.2.0-CUDA-12.0.0
+
+    Help:
+      Description
+      ===========
+      C, C++, Objective-C compiler, based on LLVM.  Does not
+       include C++ standard library -- use libstdc++ from GCC.
+      
+      
+      More information
+      ================
+       - Homepage: https://clang.llvm.org/
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ESM-2: ESM-2/2.0.0-foss-2022b-CUDA-12.0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      ESM-2 outperforms all tested single-sequence protein language models across a range of structure prediction tasks. ESMFold harnesses the ESM-2 language model to generate accurate
+      structure predictions end to end directly from the sequence of a protein.
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load ESM-2/2.0.0-foss-2022b-CUDA-12.0.0
+
+    This module provides the following extensions:
+
+       [1;34mantlr4-python3-runtime/4.9.3[0m (E), [1;34mfair-esm/2.0.0[0m (E), [1;34momegaconf/2.3.0[0m (E)
+
+    Help:
+      Description
+      ===========
+      ESM-2 outperforms all tested single-sequence protein language models
+       across a range of structure prediction tasks. ESMFold harnesses the ESM-2 language model to generate
+       accurate structure predictions end to end directly from the sequence of a protein.
+      
+      
+      More information
+      ================
+       - Homepage: https://github.com/facebookresearch/esm
+      
+      
+      Included extensions
+      ===================
+      antlr4-python3-runtime-4.9.3, fair-esm-2.0.0, omegaconf-2.3.0
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  FFTW: FFTW/3.3.10-NVHPC-23.1-CUDA-12.0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      FFTW is a C subroutine library for computing the discrete Fourier transform (DFT) in one or more dimensions, of arbitrary input size, and of both real and complex data.
+
+
+    This module can be loaded directly: module load FFTW/3.3.10-NVHPC-23.1-CUDA-12.0.0
+
+    Help:
+      Description
+      ===========
+      FFTW is a C subroutine library for computing the discrete Fourier transform (DFT)
+      in one or more dimensions, of arbitrary input size, and of both real and complex data.
+      
+      
+      More information
+      ================
+       - Homepage: https://www.fftw.org
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  FSL: FSL/6.0.5.2-fosscuda-2020b
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      FSL is a comprehensive library of analysis tools for FMRI, MRI and DTI brain imaging data.
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load FSL/6.0.5.2-fosscuda-2020b
+
+    This module provides the following extensions:
+
+       [1;34mflit_core/3.9.0[0m (E), [1;34mfslpy/3.5.3[0m (E), [1;34mhatch_vcs/0.3.0[0m (E), [1;34mhatchling/1.18.0[0m (E), [1;34mnibabel/5.1.0[0m (E), [1;34mpathspec/0.11.1[0m (E), [1;34mtomli/2.0.1[0m (E), [1;34mtrove-classifiers/2023.5.24[0m (E)
+
+    Help:
+      Description
+      ===========
+      FSL is a comprehensive library of analysis tools for FMRI, MRI and DTI brain imaging data.
+      
+      
+      More information
+      ================
+       - Homepage: https://www.fmrib.ox.ac.uk/fsl/
+      
+      
+      Included extensions
+      ===================
+      flit_core-3.9.0, fslpy-3.5.3, hatch_vcs-0.3.0, hatchling-1.18.0,
+      nibabel-5.1.0, pathspec-0.11.1, tomli-2.0.1, trove-classifiers-2023.5.24
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Faiss: Faiss/1.7.4-foss-2022b-CUDA-12.0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      Faiss is a library for efficient similarity search and clustering of dense vectors. It contains algorithms that search in sets of vectors of any size, up to ones that possibly do not
+      fit in RAM. It also contains supporting code for evaluation and parameter tuning. Faiss is written in C++ with complete wrappers for Python/numpy. Some of the most useful algorithms
+      are implemented on the GPU. It is developed primarily at Meta's Fundamental AI Research group. 
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load Faiss/1.7.4-foss-2022b-CUDA-12.0.0
+
+    Help:
+      Description
+      ===========
+      Faiss is a library for efficient similarity search and clustering of dense
+       vectors. It contains algorithms that search in sets of vectors of any size, up
+       to ones that possibly do not fit in RAM. It also contains supporting code for
+       evaluation and parameter tuning. Faiss is written in C++ with complete
+       wrappers for Python/numpy. Some of the most useful algorithms are implemented
+       on the GPU. It is developed primarily at Meta's Fundamental AI Research group.
+      
+      
+      More information
+      ================
+       - Homepage: https://github.com/facebookresearch/faiss
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  FlexiBLAS: FlexiBLAS/3.2.1-NVHPC-23.1-CUDA-12.0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      FlexiBLAS is a wrapper library that enables the exchange of the BLAS and LAPACK implementation used by a program without recompiling or relinking it.
+
+
+    This module can be loaded directly: module load FlexiBLAS/3.2.1-NVHPC-23.1-CUDA-12.0.0
+
+    Help:
+      Description
+      ===========
+      FlexiBLAS is a wrapper library that enables the exchange of the BLAS and LAPACK implementation
+      used by a program without recompiling or relinking it.
+      
+      
+      More information
+      ================
+       - Homepage: https://gitlab.mpi-magdeburg.mpg.de/software/flexiblas-release
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  GDRCopy: GDRCopy/2.1-GCCcore-10.2.0-CUDA-11.1.1
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      A low-latency GPU memory copy library based on NVIDIA GPUDirect RDMA technology.
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load GDRCopy/2.1-GCCcore-10.2.0-CUDA-11.1.1
+
+    Help:
+      Description
+      ===========
+      A low-latency GPU memory copy library based on NVIDIA GPUDirect RDMA technology.
+      
+      
+      More information
+      ================
+       - Homepage: https://github.com/NVIDIA/gdrcopy
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  GROMACS:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      GROMACS is a versatile package to perform molecular dynamics, i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles. This is a GPU enabled
+      build, containing both MPI and threadMPI builds for both single and double precision. It also contains the gmxapi extension for the single precision MPI build next to PLUMED.
+
+     Versions:
+        GROMACS/2021.5-foss-2020b-CUDA-11.1.1-PLUMED-2.7.3
+        GROMACS/2023.3-foss-2022b-CUDA-12.1.1-PLUMED-2.9.2
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "GROMACS" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider GROMACS/2023.3-foss-2022b-CUDA-12.1.1-PLUMED-2.9.2
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Gctf: Gctf/1.18-CUDA-12.0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      a GPU-accelerated computer program for accurate and robust real-time CTF determination. The main target of Gctf is to maximize the cross-correlation of a simulated CTF with the
+      logarithmic amplitude spectra (LAS) of observed micrographs after background subtraction. Relevant publication: http://dx.doi.org/10.1016/j.jsb.2015.11.003 
+
+
+    This module can be loaded directly: module load Gctf/1.18-CUDA-12.0.0
+
+    Help:
+      Description
+      ===========
+      a GPU-accelerated computer program for accurate and robust real-time CTF determination. The main target of Gctf is to maximize the cross-correlation of a simulated CTF with the logarithmic amplitude spectra (LAS) of observed micrographs after background subtraction.
+      Relevant publication: http://dx.doi.org/10.1016/j.jsb.2015.11.003
+      
+      
+      More information
+      ================
+       - Homepage: https://www2.mrc-lmb.cam.ac.uk/research/locally-developed-software/zhang-software/
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  HOOMD-blue: HOOMD-blue/4.9.1-foss-2024a-CUDA-12.6.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      HOOMD-blue is a general-purpose particle simulation toolkit, implementing molecular dynamics and hard particle Monte Carlo optimized for fast execution on both GPUs and CPUs.
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load HOOMD-blue/4.9.1-foss-2024a-CUDA-12.6.0
+
+    Help:
+      Description
+      ===========
+      HOOMD-blue is a general-purpose particle simulation
+      toolkit, implementing molecular dynamics and hard particle Monte Carlo
+      optimized for fast execution on both GPUs and CPUs.
+      
+      
+      More information
+      ================
+       - Homepage: https://glotzerlab.engin.umich.edu/hoomd-blue/
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  IMOD:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      IMOD is a set of image processing, modeling and display programs used for tomographic reconstruction and for 3D reconstruction of EM serial sections and optical sections. The package
+      contains tools for assembling and aligning data within multiple types and sizes of image stacks, viewing 3-D data from any orientation, and modeling and display of the image files.
+      IMOD was developed primarily by David Mastronarde, Rick Gaudette, Sue Held, Jim Kremer, Quanren Xiong, and John Heumann at the University of Colorado.
+
+     Versions:
+        IMOD/4.11.15-fosscuda-2020b
+        IMOD/4.11.16-fosscuda-2020b
+        IMOD/4.11.24_RHEL7-64_CUDA10.1
+        IMOD/4.11.24-fosscuda-2020b
+        IMOD/4.12.56_RHEL7-64_CUDA12.1
+        IMOD/4.12.62_RHEL8-64_CUDA12.0
+        IMOD/5.1.2_RHEL8-64_CUDA12.0
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "IMOD" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider IMOD/5.1.2_RHEL8-64_CUDA12.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  IsoNet: IsoNet/0.2.1-fosscuda-2020b
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      IsoNet stands for for ISOtropic reconstructioN of Electron Tomography. It trains deep convolutional neural networks to reconstruct meaningful contents in the mis sing wedge for
+      electron tomography, and to increase signal-to-noise ratio, using the information learned from the original tomogram. The software requires tomograms as input. Observing at about 30A
+      resolution, the IsoNet generated tomograms are largely isotropic.
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load IsoNet/0.2.1-fosscuda-2020b
+
+    This module provides the following extensions:
+
+       [1;34mfire/0.4.0[0m (E)
+
+    Help:
+      Description
+      ===========
+      IsoNet stands for for ISOtropic reconstructioN of Electron Tomography. It trains
+      deep convolutional neural networks to reconstruct meaningful contents in the mis
+      sing wedge for electron tomography, and to increase signal-to-noise ratio,      
+      using the information learned from the original tomogram. The software requires 
+      tomograms as input. Observing at about 30A resolution, the IsoNet generated     
+      tomograms are largely isotropic.
+      
+      
+      More information
+      ================
+       - Homepage: https://github.com//IsoNet-cryoET
+      
+      
+      Included extensions
+      ===================
+      fire-0.4.0
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  MONAI: MONAI/1.4.0-foss-2022b-CUDA-12.1.1
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      MONAI is a PyTorch-based, open-source framework for deep learning in healthcare imaging, part of PyTorch Ecosystem. 
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load MONAI/1.4.0-foss-2022b-CUDA-12.1.1
+
+    This module provides the following extensions:
+
+       [1;34mfire/0.5.0[0m (E), [1;34mgdown/4.7.1[0m (E), [1;34mlmdb/1.4.1[0m (E), [1;34mMONAI/1.4.0[0m (E), [1;34mpytorch-ignite/0.4.11[0m (E), [1;34mtermcolor/2.3.0[0m (E)
+
+    Help:
+      Description
+      ===========
+      MONAI is a PyTorch-based, open-source framework for deep learning in healthcare
+      imaging, part of PyTorch Ecosystem.
+      
+      
+      More information
+      ================
+       - Homepage: https://monai.io/
+      
+      
+      Included extensions
+      ===================
+      fire-0.5.0, gdown-4.7.1, lmdb-1.4.1, MONAI-1.4.0, pytorch-ignite-0.4.11,
+      termcolor-2.3.0
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  MotionCor3: MotionCor3/1.0.1-GCCcore-12.2.0-CUDA-12.0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      Anisotropic correction of beam induced motion for cryo-electron microscopy and cryo-electron tomography images. MotionCor3, an improved implementation of MotionCor2 with addition of
+      CTF (Contrast Transfer Function) estimation, is a multi-GPU accelerated software package that enables single-pixel level correction of anisotropic beam induced sample motion for
+      cryo-electron microscopy and cryo-electron tomography images. The iterative, patch-based motion detection combined with spatial and temporal constraints and dose weighting provides
+      robust and accurate correction. By refining the measurement of early motion, MotionCor3 further improves correction on tilted samples. The efficiency achieved by multi-GPU acceleration
+      and parallelization enables correction to keep pace with automated data collection. The recent addition of a very robust GPU-accelerated CTF estimation makes MotionCor3 more versatile
+      in cryoEM and cryoET processing pipeline.
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load MotionCor3/1.0.1-GCCcore-12.2.0-CUDA-12.0.0
+
+    Help:
+      Description
+      ===========
+      Anisotropic correction of beam induced motion for cryo-electron microscopy and  
+      cryo-electron tomography images.
+      MotionCor3, an improved implementation of MotionCor2 with addition of CTF       
+      (Contrast Transfer Function) estimation, is a multi-GPU accelerated software    
+      package that enables single-pixel level correction of anisotropic beam induced  
+      sample motion for cryo-electron microscopy and cryo-electron tomography images. 
+      The iterative, patch-based motion detection combined with spatial and temporal  
+      constraints and dose weighting provides robust and accurate correction. By      
+      refining the measurement of early motion, MotionCor3 further improves correction
+      on tilted samples. The efficiency achieved by multi-GPU acceleration and        
+      parallelization enables correction to keep pace with automated data collection. 
+      The recent addition of a very robust GPU-accelerated CTF estimation makes       
+      MotionCor3 more versatile in cryoEM and cryoET processing pipeline.
+      
+      
+      More information
+      ================
+       - Homepage: https://github.com/czimaginginstitute/MotionCor3
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  NAMD: NAMD/2.14-fosscuda-2020b
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      NAMD is a parallel molecular dynamics code designed for high-performance simulation of large biomolecular systems.
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load NAMD/2.14-fosscuda-2020b
+
+    Help:
+      Description
+      ===========
+      NAMD is a parallel molecular dynamics code designed for high-performance simulation of
+       large biomolecular systems.
+      
+      
+      More information
+      ================
+       - Homepage: https://www.ks.uiuc.edu/Research/namd/
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  NCCL:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      The NVIDIA Collective Communications Library (NCCL) implements multi-GPU and multi-node collective communication primitives that are performance optimized for NVIDIA GPUs.
+
+     Versions:
+        NCCL/2.8.3-GCCcore-10.2.0-CUDA-11.1.1
+        NCCL/2.8.4-CUDA-11.1.1
+        NCCL/2.10.3-GCCcore-10.2.0-CUDA-11.3.1
+        NCCL/2.16.2-GCCcore-12.2.0-CUDA-11.8.0
+        NCCL/2.16.2-GCCcore-12.2.0-CUDA-12.0.0
+        NCCL/2.16.2-GCCcore-12.2.0-CUDA-12.1.1
+        NCCL/2.18.3-GCCcore-12.2.0-CUDA-12.1.1
+        NCCL/2.23.4-GCCcore-13.3.0-CUDA-12.6.0
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "NCCL" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider NCCL/2.23.4-GCCcore-13.3.0-CUDA-12.6.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  NVHPC:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      C, C++ and Fortran compilers included with the NVIDIA HPC SDK (previously: PGI)
+
+     Versions:
+        NVHPC/21.11-CUDA-11.3.1
+        NVHPC/21.11
+        NVHPC/23.1-CUDA-12.0.0
+        NVHPC/23.7-CUDA-12.1.1
+        NVHPC/24.9-CUDA-12.6.0
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "NVHPC" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider NVHPC/24.9-CUDA-12.6.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  OpenBLAS: OpenBLAS/0.3.21-NVHPC-23.1-CUDA-12.0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version.
+
+
+    This module can be loaded directly: module load OpenBLAS/0.3.21-NVHPC-23.1-CUDA-12.0.0
+
+    Help:
+      Description
+      ===========
+      OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version.
+      
+      
+      More information
+      ================
+       - Homepage: http://www.openblas.net/
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  OpenCV: OpenCV/4.8.0-foss-2022b-CUDA-12.0.0-contrib
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      OpenCV (Open Source Computer Vision Library) is an open source computer vision and machine learning software library. OpenCV was built to provide a common infrastructure for computer
+      vision applications and to accelerate the use of machine perception in the commercial products. Includes extra modules for OpenCV from the contrib repository.
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load OpenCV/4.8.0-foss-2022b-CUDA-12.0.0-contrib
+
+    Help:
+      Description
+      ===========
+      OpenCV (Open Source Computer Vision Library) is an open source computer vision
+       and machine learning software library. OpenCV was built to provide
+       a common infrastructure for computer vision applications and to accelerate
+       the use of machine perception in the commercial products.
+       Includes extra modules for OpenCV from the contrib repository.
+      
+      
+      More information
+      ================
+       - Homepage: https://opencv.org/
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  OpenMM:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      OpenMM is a toolkit for molecular simulation.
+
+     Versions:
+        OpenMM/7.5.0-fosscuda-2020b
+        OpenMM/7.5.1-foss-2020b-CUDA-11.3.1-AlphaFold-patch
+        OpenMM/7.5.1-foss-2020b
+        OpenMM/7.5.1-fosscuda-2020b
+        OpenMM/7.7.0-foss-2020b-CUDA-11.3.1
+        OpenMM/8.0.0-foss-2022b-CUDA-12.1.1
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "OpenMM" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider OpenMM/8.0.0-foss-2022b-CUDA-12.1.1
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  OpenMPI:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      The Open MPI Project is an open source MPI-3 implementation.
+
+     Versions:
+        OpenMPI/4.0.5-GCC-10.2.0-CUDA-11.3.1
+        OpenMPI/4.0.5-GCC-10.2.0
+        OpenMPI/4.0.5-gcccuda-2020b
+        OpenMPI/4.0.5-iccifort-2020.4.304
+        OpenMPI/4.0.5-iccifort-2020.4.304-20250610
+        OpenMPI/4.0.5-NVHPC-21.11-CUDA-11.1.1
+        OpenMPI/4.0.5-NVHPC-21.11-CUDA-11.1.1-20250610
+        OpenMPI/4.1.4-GCC-12.2.0
+        OpenMPI/4.1.4-intel-compilers-2022.2.1
+        OpenMPI/4.1.4-intel-compilers-2022.2.1-20250610
+        OpenMPI/4.1.4-NVHPC-23.1-CUDA-12.0.0
+        OpenMPI/4.1.6-NVHPC-23.7-CUDA-12.1.1
+        OpenMPI/5.0.3-GCC-13.3.0
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "OpenMPI" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider OpenMPI/5.0.3-GCC-13.3.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  PDBFixer: PDBFixer/1.7-fosscuda-2020b
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      PDBFixer is an easy to use application for fixing problems in Protein Data Bank files in preparation for simulating them.
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load PDBFixer/1.7-fosscuda-2020b
+
+    Help:
+      Description
+      ===========
+      PDBFixer is an easy to use application for fixing problems in Protein Data Bank files in preparation
+      for simulating them.
+      
+      
+      More information
+      ================
+       - Homepage: https://github.com/openmm/pdbfixer
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  PyTorch:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      Tensors and Dynamic neural networks in Python with strong GPU acceleration. PyTorch is a deep learning framework that puts Python first.
+
+     Versions:
+        PyTorch/1.9.0-fosscuda-2020b
+        PyTorch/1.13.1-foss-2022b-CUDA-12.0.0
+        PyTorch/2.1.2-foss-2022b-CUDA-12.0.0
+        PyTorch/2.1.2-foss-2022b-CUDA-12.1.1
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "PyTorch" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider PyTorch/2.1.2-foss-2022b-CUDA-12.1.1
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  RELION:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      RELION (for REgularised LIkelihood OptimisatioN) is a stand-alone computer program for Maximum A Posteriori refinement of (multiple) 3D reconstructions or 2D class averages in
+      cryo-electron microscopy. It is developed in the research group of Sjors Scheres at the MRC Laboratory of Molecular Biology. The underlying theory of MAP refinement is given in a
+      scientific publication: Scheres, JMB (2011) (DOI: 10.1016/j.jmb.2011.11.010). If RELION is useful in your work, please cite this paper. This version of RELION3 was built for NVIDIA
+      GPUs that support compute version 3.7 and higher. 
+
+     Versions:
+        RELION/3.0.8-fosscuda-2020b
+        RELION/3.1.4-foss-2020b
+        RELION/3.1.4-fosscuda-2020b
+        RELION/3.1.4-intel-2020b
+        RELION/4.0.0-fosscuda-2020b
+        RELION/4.0.1-foss-2022b-CUDA-12.0.0
+        RELION/4.0.1-fosscuda-2020b
+        RELION/5beta-foss-2022b-CUDA-12.0.0-2024-03-13
+        RELION/5beta-2024-05-03-foss-2022b-CUDA-12.0.0
+        RELION/5.0.0-foss-2022b-CUDA-12.0.0
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "RELION" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider RELION/5.0.0-foss-2022b-CUDA-12.0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  RELION-composite-masks: RELION-composite-masks/5.0.0-foss-2022b-CUDA-12.0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      RELION modified for use with with composite masks (Dou, T., Lian, T., Shu, S. et al. The substrate and inhibitor binding mechanism of polyspecific transporter OAT1 revealed by
+      high-resolution cryo-EM. Nat Struct Mol Biol 30, 1794–1805 (2023). https://doi.org/10.1038/s41594-023-01123-3). RELION (for REgularised LIkelihood OptimisatioN) is a stand-alone
+      computer program for Maximum A Posteriori refinement of (multiple) 3D reconstructions or 2D class averages in cryo-electron microscopy. It is developed in the research group of Sjors
+      Scheres at the MRC Laboratory of Molecular Biology. The underlying theory of MAP refinement is given in a scientific publication: Scheres, JMB (2011) (DOI: 10.1016/j.jmb.2011.11.010).
+      If RELION is useful in your work, please cite this paper. This version of RELION5 was built for NVIDIA GPUs that support compute version 6.0 and higher. 
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load RELION-composite-masks/5.0.0-foss-2022b-CUDA-12.0.0
+
+    This module provides the following extensions:
+
+       [1;34mDynaMight/0.0.1_20240319[0m (E), [1;34mfastcluster/1.2.6[0m (E), [1;34mloguru/0.7.2[0m (E), [1;34mmodel-angelo/1.0.12_20231207[0m (E), [1;34mnumpy/1.25.2[0m (E), [1;34mpandas/2.1.4[0m (E), [1;34mpyhmmer/0.10.12[0m (E), [1;34mrelion-blush/0.0.1_20231105[0m (E), [1;34mrelion-classranker/0.0.1_20230822[0m (E), [1;34mstarfile/0.5.4[0m (E), [1;34mtyper/0.9.0[0m (E), [1;34mtzdata/2024.1[0m (E)
+
+    Help:
+      Description
+      ===========
+      RELION modified for use with with composite masks (Dou, T., Lian, T., Shu, S. et al. The substrate and inhibitor binding mechanism of polyspecific transporter OAT1 revealed by high-resolution cryo-EM. Nat Struct Mol Biol 30, 1794–1805 (2023). https://doi.org/10.1038/s41594-023-01123-3). 
+      
+      RELION (for REgularised LIkelihood OptimisatioN) is a stand-alone computer program for Maximum A Posteriori refinement of (multiple) 3D reconstructions or 2D class averages in cryo-electron microscopy. It is developed in the research group of Sjors Scheres at the MRC Laboratory of Molecular Biology. The underlying theory of MAP refinement is given in a scientific publication: Scheres, JMB (2011) (DOI: 10.1016/j.jmb.2011.11.010). If RELION is useful in your work, please cite this paper.
+      
+      This version of RELION5 was built for NVIDIA GPUs that support compute version 6.0 and higher.
+      
+      
+      More information
+      ================
+       - Homepage: https://github.com/jiangjiansen/relion_composite_masks
+      
+      
+      Included extensions
+      ===================
+      DynaMight-0.0.1_20240319, fastcluster-1.2.6, loguru-0.7.2, model-
+      angelo-1.0.12_20231207, numpy-1.25.2, pandas-2.1.4, pyhmmer-0.10.12, relion-
+      blush-0.0.1_20231105, relion-classranker-0.0.1_20230822, starfile-0.5.4,
+      typer-0.9.0, tzdata-2024.1
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ResMap: ResMap/1.95-cuda-Centos7x64
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      ResMap (Resolution Map) is a Python (NumPy/SciPy) application with a Tkinter GUI. It is an easy to use software package for computing the local resolution of 3D density maps studied in
+      structural biology, primarily electron cryo-microscopy (cryo-EM).
+
+
+    This module can be loaded directly: module load ResMap/1.95-cuda-Centos7x64
+
+    Help:
+      Description
+      ===========
+      ResMap (Resolution Map) is a Python (NumPy/SciPy) application
+      with a Tkinter GUI. It is an easy to use software package for computing the
+      local resolution of 3D density maps studied in structural biology, primarily
+      electron cryo-microscopy (cryo-EM).
+      
+      
+      More information
+      ================
+       - Homepage: http://resmap.sourceforge.net/
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  SciPy-bundle: SciPy-bundle/2020.11-fosscuda-2020b
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      Bundle of Python packages for scientific software
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load SciPy-bundle/2020.11-fosscuda-2020b
+
+    This module provides the following extensions:
+
+       [1;34mBottleneck/1.3.2[0m (E), [1;34mdeap/1.3.1[0m (E), [1;34mmpi4py/3.0.3[0m (E), [1;34mmpmath/1.1.0[0m (E), [1;34mnumexpr/2.7.1[0m (E), [1;34mnumpy/1.19.4[0m (E), [1;34mpandas/1.1.4[0m (E), [1;34mscipy/1.5.4[0m (E)
+
+    Help:
+      Description
+      ===========
+      Bundle of Python packages for scientific software
+      
+      
+      More information
+      ================
+       - Homepage: https://python.org/
+      
+      
+      Included extensions
+      ===================
+      Bottleneck-1.3.2, deap-1.3.1, mpi4py-3.0.3, mpmath-1.1.0, numexpr-2.7.1,
+      numpy-1.19.4, pandas-1.1.4, scipy-1.5.4
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Spark: Spark/3.1.1-fosscuda-2020b
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      Spark is Hadoop MapReduce done in memory
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load Spark/3.1.1-fosscuda-2020b
+
+    This module provides the following extensions:
+
+       [1;34mpy4j/0.10.9.2[0m (E)
+
+    Help:
+      Description
+      ===========
+      Spark is Hadoop MapReduce done in memory
+      
+      
+      More information
+      ================
+       - Homepage: https://spark.apache.org
+      
+      
+      Included extensions
+      ===================
+      py4j-0.10.9.2
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  TensorFlow:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+     Versions:
+        TensorFlow/2.5.0-fosscuda-2020b
+        [1;34mTensorFlow/2.5.0[0m (E)
+        TensorFlow/2.7.1-foss-2020b-CUDA-11.3.1
+        [1;34mTensorFlow/2.7.1[0m (E)
+        TensorFlow/2.13.0-foss-2022b
+        [1;34mTensorFlow/2.13.0[0m (E)
+        TensorFlow/2.15.1-foss-2022b-CUDA-12.1.1
+        [1;34mTensorFlow/2.15.1[0m (E)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "TensorFlow" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider TensorFlow/2.15.1
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  TensorRT: TensorRT/8.6.1-foss-2022b-CUDA-12.0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      NVIDIA TensorRT is a platform for high-performance deep learning inference
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load TensorRT/8.6.1-foss-2022b-CUDA-12.0.0
+
+    Help:
+      Description
+      ===========
+      NVIDIA TensorRT is a platform for high-performance deep learning inference
+      
+      
+      More information
+      ================
+       - Homepage: https://developer.nvidia.com/tensorrt
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  UCC-CUDA:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      UCC (Unified Collective Communication) is a collective communication operations API and library that is flexible, complete, and feature-rich for current and emerging programming models
+      and runtimes. This module adds the UCC CUDA support. 
+
+     Versions:
+        UCC-CUDA/1.1.0-GCCcore-12.2.0-CUDA-12.0.0
+        UCC-CUDA/1.1.0-GCCcore-12.2.0-CUDA-12.1.1
+        UCC-CUDA/1.3.0-GCCcore-13.3.0-CUDA-12.6.0
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "UCC-CUDA" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider UCC-CUDA/1.3.0-GCCcore-13.3.0-CUDA-12.6.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  UCX: UCX/1.9.0-GCCcore-10.2.0-CUDA-11.1.1
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      Unified Communication X An open-source production grade communication framework for data centric and high-performance applications 
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load UCX/1.9.0-GCCcore-10.2.0-CUDA-11.1.1
+
+    Help:
+      Description
+      ===========
+      Unified Communication X
+      An open-source production grade communication framework for data centric
+      and high-performance applications
+      
+      
+      More information
+      ================
+       - Homepage: http://www.openucx.org/
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  UCX-CUDA:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      Unified Communication X An open-source production grade communication framework for data centric and high-performance applications This module adds the UCX CUDA support. 
+
+     Versions:
+        UCX-CUDA/1.10.0-GCCcore-10.2.0-CUDA-11.3.1
+        UCX-CUDA/1.13.1-GCCcore-12.2.0-CUDA-11.8.0
+        UCX-CUDA/1.13.1-GCCcore-12.2.0-CUDA-12.0.0
+        UCX-CUDA/1.13.1-GCCcore-12.2.0-CUDA-12.1.1
+        UCX-CUDA/1.16.0-GCCcore-13.3.0-CUDA-12.6.0
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "UCX-CUDA" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider UCX-CUDA/1.16.0-GCCcore-13.3.0-CUDA-12.6.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  VTK: VTK/9.0.1-fosscuda-2020b
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      The Visualization Toolkit (VTK) is an open-source, freely available software system for 3D computer graphics, image processing and visualization. VTK consists of a C++ class library
+      and several interpreted interface layers including Tcl/Tk, Java, and Python. VTK supports a wide variety of visualization algorithms including: scalar, vector, tensor, texture, and
+      volumetric methods; and advanced modeling techniques such as: implicit modeling, polygon reduction, mesh smoothing, cutting, contouring, and Delaunay triangulation.
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load VTK/9.0.1-fosscuda-2020b
+
+    This module provides the following extensions:
+
+       [1;34m[0m (E)
+
+    Help:
+      Description
+      ===========
+      The Visualization Toolkit (VTK) is an open-source, freely available software system for
+       3D computer graphics, image processing and visualization. VTK consists of a C++ class library and several
+       interpreted interface layers including Tcl/Tk, Java, and Python. VTK supports a wide variety of visualization
+       algorithms including: scalar, vector, tensor, texture, and volumetric methods; and advanced modeling techniques
+       such as: implicit modeling, polygon reduction, mesh smoothing, cutting, contouring, and Delaunay triangulation.
+      
+      
+      More information
+      ================
+       - Homepage: https://www.vtk.org
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  XGBoost: XGBoost/2.1.1-gfbf-2022b-CUDA-12.1.1
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      XGBoost is an optimized distributed gradient boosting library designed to be highly efficient, flexible and portable.
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load XGBoost/2.1.1-gfbf-2022b-CUDA-12.1.1
+
+    Help:
+      Description
+      ===========
+      XGBoost is an optimized distributed gradient boosting library designed to be highly efficient,
+       flexible and portable.
+      
+      
+      More information
+      ================
+       - Homepage: https://github.com/dmlc/xgboost
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  beagle-lib:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      beagle-lib is a high-performance library that can perform the core calculations at the heart of most Bayesian and Maximum Likelihood phylogenetics packages.
+
+     Versions:
+        beagle-lib/3.1.2-fosscuda-2020b
+        beagle-lib/3.1.2-GCC-10.2.0
+        beagle-lib/3.1.2-GCCcore-10.2.0
+        beagle-lib/3.1.2-GCCcore-12.2.0
+        beagle-lib/4.0.0-GCC-12.2.0
+        beagle-lib/4.0.1-GCC-12.2.0-CUDA-12.0.0
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "beagle-lib" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider beagle-lib/4.0.1-GCC-12.2.0-CUDA-12.0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  bokeh: bokeh/2.2.3-fosscuda-2020b
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      Statistical and novel interactive HTML plots for Python
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load bokeh/2.2.3-fosscuda-2020b
+
+    This module provides the following extensions:
+
+       [1;34mbokeh/2.2.3[0m (E), [1;34mtornado/6.1[0m (E)
+
+    Help:
+      Description
+      ===========
+      Statistical and novel interactive HTML plots for Python
+      
+      
+      More information
+      ================
+       - Homepage: https://github.com/bokeh/bokeh
+      
+      
+      Included extensions
+      ===================
+      bokeh-2.2.3, tornado-6.1
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  cuDNN:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      The NVIDIA CUDA Deep Neural Network library (cuDNN) is a GPU-accelerated library of primitives for deep neural networks.
+
+     Versions:
+        cuDNN/8.0.5.39-CUDA-11.1.1
+        cuDNN/8.2.1.32-CUDA-11.3.1
+        cuDNN/8.7.0.84-CUDA-11.8.0
+        cuDNN/8.8.0.121-CUDA-12.0.0
+        cuDNN/8.9.2.26-CUDA-12.1.1
+        cuDNN/9.5.0.50-CUDA-12.6.0
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "cuDNN" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider cuDNN/9.5.0.50-CUDA-12.6.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  cuTENSOR:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      The cuTENSOR Library is a GPU-accelerated tensor linear algebra library providing tensor contraction, reduction and elementwise operations.
+
+     Versions:
+        cuTENSOR/1.7.0.1-CUDA-12.0.0
+        cuTENSOR/2.0.2.5-CUDA-12.6.0
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "cuTENSOR" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider cuTENSOR/2.0.2.5-CUDA-12.6.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  dask: dask/2021.2.0-fosscuda-2020b
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      Dask natively scales Python. Dask provides advanced parallelism for analytics, enabling performance at scale for the tools you love.
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load dask/2021.2.0-fosscuda-2020b
+
+    This module provides the following extensions:
+
+       [1;34mcloudpickle/1.6.0[0m (E), [1;34mdask-jobqueue/0.7.2[0m (E), [1;34mdask-mpi/2.21.0[0m (E), [1;34mdask/2021.2.0[0m (E), [1;34mdistributed/2021.2.0[0m (E), [1;34mdocrep/0.3.2[0m (E), [1;34mfsspec/0.8.7[0m (E), [1;34mHeapDict/1.0.1[0m (E), [1;34mlocket/0.2.1[0m (E), [1;34mmsgpack/1.0.2[0m (E), [1;34mpartd/1.1.0[0m (E), [1;34mtblib/1.7.0[0m (E), [1;34mtoolz/0.11.1[0m (E), [1;34mzict/2.0.0[0m (E)
+
+    Help:
+      Description
+      ===========
+      Dask natively scales Python. Dask provides advanced parallelism for analytics, enabling performance
+       at scale for the tools you love.
+      
+      
+      More information
+      ================
+       - Homepage: https://dask.org/
+      
+      
+      Included extensions
+      ===================
+      cloudpickle-1.6.0, dask-2021.2.0, dask-jobqueue-0.7.2, dask-mpi-2.21.0,
+      distributed-2021.2.0, docrep-0.3.2, fsspec-0.8.7, HeapDict-1.0.1,
+      locket-0.2.1, msgpack-1.0.2, partd-1.1.0, tblib-1.7.0, toolz-0.11.1,
+      zict-2.0.0
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  dlib:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      Dlib is a modern C++ toolkit containing machine learning algorithms and tools for creating complex software in C++ to solve real world problems. It is used in both industry and
+      academia in a wide range of domains including robotics, embedded devices, mobile phones, and large high performance computing environments.
+
+     Versions:
+        dlib/19.22-foss-2020b-CUDA-11.3.1
+        dlib/19.22-foss-2022b-CUDA-12.0.0
+        dlib/19.22-NVHPC-23.1-CUDA-12.0.0
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "dlib" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider dlib/19.22-NVHPC-23.1-CUDA-12.0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  dorado: dorado/0.5.3-foss-2022b-CUDA-12.0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      Dorado is a high-performance, easy-to-use, open source basecaller for Oxford Nanopore reads.
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load dorado/0.5.3-foss-2022b-CUDA-12.0.0
+
+    Help:
+      Description
+      ===========
+      Dorado is a high-performance, easy-to-use, open source basecaller for Oxford Nanopore reads.
+      
+      
+      More information
+      ================
+       - Homepage: https://github.com/nanoporetech/dorado
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  fosscuda: fosscuda/2020b
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      GCC based compiler toolchain __with CUDA support__, and including OpenMPI for MPI support, OpenBLAS (BLAS and LAPACK support), FFTW and ScaLAPACK.
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load fosscuda/2020b
+
+    Help:
+      Description
+      ===========
+      GCC based compiler toolchain __with CUDA support__, and including
+       OpenMPI for MPI support, OpenBLAS (BLAS and LAPACK support), FFTW and ScaLAPACK.
+      
+      
+      More information
+      ================
+       - Homepage: (none)
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  gcccuda:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      GNU Compiler Collection (GCC) based compiler toolchain, along with CUDA toolkit.
+
+     Versions:
+        gcccuda/2020b
+        gcccuda/2022b
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "gcccuda" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider gcccuda/2022b
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  gpu_burn: gpu_burn/20231110-GCCcore-12.2.0-CUDA-12.0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      Multi-GPU CUDA stress-test.
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load gpu_burn/20231110-GCCcore-12.2.0-CUDA-12.0.0
+
+    Help:
+      Description
+      ===========
+      Multi-GPU CUDA stress-test.
+      
+      
+      More information
+      ================
+       - Homepage: https://github.com/wilicc/gpu-burn
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  h5py: h5py/3.1.0-fosscuda-2020b
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      HDF5 for Python (h5py) is a general-purpose Python interface to the Hierarchical Data Format library, version 5. HDF5 is a versatile, mature scientific software library designed for
+      the fast, flexible storage of enormous amounts of data.
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load h5py/3.1.0-fosscuda-2020b
+
+    Help:
+      Description
+      ===========
+      HDF5 for Python (h5py) is a general-purpose Python interface to the Hierarchical Data Format library,
+       version 5. HDF5 is a versatile, mature scientific software library designed for the fast, flexible storage of enormous
+       amounts of data.
+      
+      
+      More information
+      ================
+       - Homepage: https://www.h5py.org/
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  igraph: igraph/0.10.6-NVHPC-23.1-CUDA-12.0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      igraph is a collection of network analysis tools with the emphasis on efficiency, portability and ease of use. igraph is open source and free. igraph can be programmed in R, Python and
+      C/C++.
+
+
+    This module can be loaded directly: module load igraph/0.10.6-NVHPC-23.1-CUDA-12.0.0
+
+    Help:
+      Description
+      ===========
+      igraph is a collection of network analysis tools with the emphasis on 
+      efficiency, portability and ease of use. igraph is open source and free. igraph can be 
+      programmed in R, Python and C/C++.
+      
+      
+      More information
+      ================
+       - Homepage: https://igraph.org
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  imgaug: imgaug/0.4.0-foss-2022b-CUDA-12.0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      This python library helps you with augmenting images for your machine learning projects. It converts a set of input images into a new, much larger set of slightly altered images. 
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load imgaug/0.4.0-foss-2022b-CUDA-12.0.0
+
+    Help:
+      Description
+      ===========
+      This python library helps you with augmenting images for your machine learning projects.
+       It converts a set of input images into a new, much larger set of slightly altered images.
+      
+      
+      More information
+      ================
+       - Homepage: https://imgaug.readthedocs.io/en/latest/
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  jax:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+     Versions:
+        jax/0.2.19-fosscuda-2020b
+        [1;34mjax/0.2.19[0m (E)
+        jax/0.3.25-foss-2020b-CUDA-11.3.1
+        [1;34mjax/0.3.25[0m (E)
+        jax/0.4.25-foss-2022b
+        jax/0.4.25-gfbf-2022b-CUDA-12.1.1
+        [1;34mjax/0.4.25[0m (E)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "jax" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider jax/0.4.25
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  libleidenalg: libleidenalg/0.11.1-NVHPC-23.1-CUDA-12.0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      Implements the Leiden algorithm in C++
+
+
+    This module can be loaded directly: module load libleidenalg/0.11.1-NVHPC-23.1-CUDA-12.0.0
+
+    Help:
+      Description
+      ===========
+      Implements the Leiden algorithm in C++
+      
+      
+      More information
+      ================
+       - Homepage: https://github.com/vtraag/libleidenalg
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  magma:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      The MAGMA project aims to develop a dense linear algebra library similar to LAPACK but for heterogeneous/hybrid architectures, starting with current Multicore+GPU systems.
+
+     Versions:
+        magma/2.5.4-fosscuda-2020b
+        magma/2.7.1-foss-2022b-CUDA-12.0.0
+        magma/2.7.1-foss-2022b-CUDA-12.1.1
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "magma" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider magma/2.7.1-foss-2022b-CUDA-12.1.1
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  matplotlib: matplotlib/3.3.3-fosscuda-2020b
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      matplotlib is a python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms. matplotlib can be
+      used in python scripts, the python and ipython shell, web application servers, and six graphical user interface toolkits.
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load matplotlib/3.3.3-fosscuda-2020b
+
+    This module provides the following extensions:
+
+       [1;34mCycler/0.10.0[0m (E), [1;34mkiwisolver/1.3.0[0m (E), [1;34mmatplotlib/3.3.3[0m (E)
+
+    Help:
+      Description
+      ===========
+      matplotlib is a python 2D plotting library which produces publication quality figures in a variety of
+       hardcopy formats and interactive environments across platforms. matplotlib can be used in python scripts, the python
+       and ipython shell, web application servers, and six graphical user interface toolkits.
+      
+      
+      More information
+      ================
+       - Homepage: https://matplotlib.org
+      
+      
+      Included extensions
+      ===================
+      Cycler-0.10.0, kiwisolver-1.3.0, matplotlib-3.3.3
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  mrcfile: mrcfile/1.3.0-fosscuda-2020b
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      mrcfile is a Python implementation of the MRC2014 file format, which is used in structural biology to store image and volume data. It allows MRC files to be created and opened easily
+      using a very simple API, which exposes the file’s header and data as numpy arrays. The code runs in Python 2 and 3 and is fully unit-tested. This library aims to allow users and
+      developers to read and write standard- compliant MRC files in Python as easily as possible, and with no dependencies on any compiled libraries except numpy. You can use it
+      interactively to inspect files, correct headers and so on, or in scripts and larger software packages to provide basic MRC file I/O functions. 
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load mrcfile/1.3.0-fosscuda-2020b
+
+    Help:
+      Description
+      ===========
+      mrcfile is a Python implementation of the MRC2014 file format, which is used in 
+      structural biology to store image and volume data.
+      It allows MRC files to be created and opened easily using a very simple API,   
+      which exposes the file’s header and data as numpy arrays. The code runs in     
+      Python 2 and 3 and is fully unit-tested.
+      This library aims to allow users and developers to read and write standard-
+      compliant MRC files in Python as easily as possible, and with no dependencies on
+      any compiled libraries except numpy. You can use it interactively to inspect 
+      files, correct headers and so on, or in scripts and larger software packages to 
+      provide basic MRC file I/O functions.
+      
+      
+      More information
+      ================
+       - Homepage: https://github.com/ccpem/mrcfile
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  networkx: networkx/2.5-fosscuda-2020b
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      NetworkX is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load networkx/2.5-fosscuda-2020b
+
+    Help:
+      Description
+      ===========
+      NetworkX is a Python package for the creation, manipulation,
+      and study of the structure, dynamics, and functions of complex networks.
+      
+      
+      More information
+      ================
+       - Homepage: https://pypi.python.org/pypi/networkx
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ollama: ollama/0.7.0-GCCcore-12.2.0-CUDA-12.1.1
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      Get up and running with large language models.
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load ollama/0.7.0-GCCcore-12.2.0-CUDA-12.1.1
+
+    Help:
+      Description
+      ===========
+      Get up and running with large language models.
+      
+      
+      More information
+      ================
+       - Homepage: https://ollama.com/
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  pocl: pocl/5.0-GCC-12.2.0-CUDA-12.0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      PoCL is a portable open source (MIT-licensed) implementation of the OpenCL standard (1.2 with some 2.0 features supported).
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load pocl/5.0-GCC-12.2.0-CUDA-12.0.0
+
+    Help:
+      Description
+      ===========
+      PoCL is a portable open source (MIT-licensed) implementation 
+      of the OpenCL standard (1.2 with some 2.0 features supported).
+      
+      
+      More information
+      ================
+       - Homepage: http://portablecl.org
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  scikit-build: scikit-build/0.11.1-fosscuda-2020b
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      Scikit-Build, or skbuild, is an improved build system generator for CPython C/C++/Fortran/Cython extensions.
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load scikit-build/0.11.1-fosscuda-2020b
+
+    This module provides the following extensions:
+
+       [1;34mdistro/1.5.0[0m (E), [1;34mscikit-build/0.11.1[0m (E)
+
+    Help:
+      Description
+      ===========
+      Scikit-Build, or skbuild, is an improved build system generator
+      for CPython C/C++/Fortran/Cython extensions.
+      
+      
+      More information
+      ================
+       - Homepage: https://scikit-build.readthedocs.io/en/latest
+      
+      
+      Included extensions
+      ===================
+      distro-1.5.0, scikit-build-0.11.1
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  scikit-image: scikit-image/0.18.1-fosscuda-2020b
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      scikit-image is a collection of algorithms for image processing.
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load scikit-image/0.18.1-fosscuda-2020b
+
+    This module provides the following extensions:
+
+       [1;34mimageio/2.9.0[0m (E), [1;34mimread/0.7.4[0m (E), [1;34mpooch/1.3.0[0m (E), [1;34mPyWavelets/1.1.1[0m (E), [1;34mscikit-image/0.18.1[0m (E), [1;34mtifffile/2021.2.1[0m (E)
+
+    Help:
+      Description
+      ===========
+      scikit-image is a collection of algorithms for image processing.
+      
+      
+      More information
+      ================
+       - Homepage: https://scikit-image.org/
+      
+      
+      Included extensions
+      ===================
+      imageio-2.9.0, imread-0.7.4, pooch-1.3.0, PyWavelets-1.1.1, scikit-
+      image-0.18.1, tifffile-2021.2.1
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  scikit-learn: scikit-learn/0.23.2-fosscuda-2020b
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      Scikit-learn integrates machine learning algorithms in the tightly-knit scientific Python world, building upon numpy, scipy, and matplotlib. As a machine-learning module, it provides
+      versatile tools for data mining and analysis in any field of science and engineering. It strives to be simple and efficient, accessible to everybody, and reusable in various contexts.
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load scikit-learn/0.23.2-fosscuda-2020b
+
+    Help:
+      Description
+      ===========
+      Scikit-learn integrates machine learning algorithms in the tightly-knit scientific Python world,
+      building upon numpy, scipy, and matplotlib. As a machine-learning module,
+      it provides versatile tools for data mining and analysis in any field of science and engineering.
+      It strives to be simple and efficient, accessible to everybody, and reusable in various contexts.
+      
+      
+      More information
+      ================
+       - Homepage: https://scikit-learn.org/stable/index.html
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  t-SNE-CUDA: t-SNE-CUDA/3.0.1-foss-2022b-CUDA-12.0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      GPU Accelerated t-SNE for CUDA with Python bindings
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load t-SNE-CUDA/3.0.1-foss-2022b-CUDA-12.0.0
+
+    Help:
+      Description
+      ===========
+      GPU Accelerated t-SNE for CUDA with Python bindings
+      
+      
+      More information
+      ================
+       - Homepage: https://github.com/CannyLab/tsne-cuda
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  tesseract: tesseract/5.3.0-GCCcore-12.2.0-CUDA-12.0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      Tesseract is an optical character recognition engine
+
+    Properties:
+      built for GPU
+
+    This module can be loaded directly: module load tesseract/5.3.0-GCCcore-12.2.0-CUDA-12.0.0
+
+    Help:
+      Description
+      ===========
+      Tesseract is an optical character recognition engine
+      
+      
+      More information
+      ================
+       - Homepage: https://github.com/tesseract-ocr/tesseract
+      
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  topaz:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      Particle picking software for single particle cryo-electron microscopy using convolutional neural networks and positive-unlabeled learning. Includes methods for micrograph denoising.
+
+     Versions:
+        topaz/0.2.5-fosscuda-2020b
+        topaz/0.2.5.20240417-foss-2022b-CUDA-12.0.0
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "topaz" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider topaz/0.2.5.20240417-foss-2022b-CUDA-12.0.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  torchvision:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Description:
+      Datasets, Transforms and Models specific to Computer Vision
+
+     Versions:
+        torchvision/0.10.0-fosscuda-2020b-PyTorch-1.9.0
+        torchvision/0.16.0-foss-2022b-CUDA-12.0.0
+        torchvision/0.16.2-foss-2022b-CUDA-12.1.1
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "torchvision" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider torchvision/0.16.2-foss-2022b-CUDA-12.1.1
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ 
+

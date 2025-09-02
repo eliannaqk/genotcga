@@ -1,0 +1,38 @@
+# Conda environment for Borzoi / Flashzoi work on Yale's McCleary GPU cluster
+# -----------------------------------------------------------------------------
+# IMPORTANT – choose the torch build that matches the CUDA version shown by
+# `nvidia-smi` once you are on a GPU node.  Replace CU_VERSION below (e.g. cu121)
+# everywhere in the pip section.  If you will only run on CPU nodes / login
+# node, you can instead switch to the CPU wheels and remove the "+cuXXX" suffix.
+# -----------------------------------------------------------------------------
+name: borzoi
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Core
+  - python=3.11
+  - pip
+
+  # Scientific stack / utility
+  - numpy
+  - pandas
+  - tqdm
+  - h5py
+
+  # Bioinformatics
+  - pysam
+  - samtools  # optional CLI complement to pysam
+
+  # Key libraries pulled via pip to ensure correct CUDA wheels
+  - pip:
+      # Replace "CU_VERSION" with what you need, e.g. cu121 for CUDA 12.1.
+      - torch==2.2.1+CU_VERSION     --index-url https://download.pytorch.org/whl/CU_VERSION
+      - torchvision==0.17.1+CU_VERSION --index-url https://download.pytorch.org/whl/CU_VERSION
+      - torchaudio==2.2.1+CU_VERSION --index-url https://download.pytorch.org/whl/CU_VERSION
+
+      # Borzoi model wrapper
+      - borzoi-pytorch
+
+      # Storage / caching helpers
+      - lmdb
