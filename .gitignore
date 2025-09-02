@@ -1,0 +1,74 @@
+# Local and private data
+data/
+**/data/
+*.h5
+*.hdf5
+*.bam
+*.bai
+*.fastq
+*.fastq.gz
+*.fq.gz
+*.vcf
+*.vcf.gz
+*.bcf
+*.bed
+*.bed.gz
+*.gff
+*.gff3
+*.gtf
+*.sam
+*.cram
+*.fasta
+*.fa
+*.fa.gz
+*.fna
+*.fna.gz
+*.nii
+*.nii.gz
+*.npz
+*.npy
+*.pt
+*.pth
+*.ckpt
+*.parquet
+*.feather
+*.arrow
+*.csv
+*.tsv
+*.tsv.gz
+*.log
+*.sqlite
+*.db
+*.rds
+*.rda
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Build artifacts
+build/
+dist/
+*.egg
+*.whl
+
+# Misc
+*.tmp
+*.cache/
+.cache/
+
